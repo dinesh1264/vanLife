@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 export const Van = () => {
-  return (
-    <div>Van</div>
-  )
-}
+  
+  useEffect(() => {
+    fetch("/api/vans")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  });
+
+  return <div>Van</div>;
+};
