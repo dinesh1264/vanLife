@@ -8,7 +8,7 @@ export const  Header = () => {
       <header>
         <nav>
           <ul className='flex text-5xl'>
-            <li className='basis-4/5 font-bold'>
+            <li className='basis-4/5 font-black'>
               <Link to="/">#VANLIFE</Link>
             </li>
             <li className='navigation text-2xl'>
@@ -17,7 +17,7 @@ export const  Header = () => {
               isActive ? 'text-black underline': 'none'}>About</NavLink>
             </li>
             <li className='navigation text-2xl'>
-              <NavLink to="/van" className={({isActive}) => isActive ? 'text-black underline' : 'none'}>Vans</NavLink>
+              <NavLink to="/vans" className={({isActive}) => isActive ? 'text-black underline' : 'none'}>Vans</NavLink>
             </li>
           </ul>
         </nav>
